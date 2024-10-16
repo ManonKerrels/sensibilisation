@@ -1,0 +1,14 @@
+pluginManagement {
+
+    plugins {
+        id 'org.springframework.boot' version getProperty('spring-boot.version')
+        id 'io.freefair.lombok' version getProperty('lombok.plugin.version')
+    }
+}
+
+rootProject.name = 'sensibilisation'
+
+include 'domain'
+include 'primary-adapters:api'
+include 'secondary-adapters'
+

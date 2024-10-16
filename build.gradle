@@ -1,0 +1,44 @@
+plugins {
+    id "org.springframework.boot" version "3.2.0"
+    id "io.spring.dependency-management" version "1.1.0"
+    id "java"
+    id "io.freefair.lombok" version "8.6"
+}
+
+configure(allprojects) { project ->
+    group 'org.sensibilisation'
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/release" }
+    }
+}
+
+configure(subprojects) { project ->
+    apply plugin: "io.spring.dependency-management"
+    apply plugin: "java"
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+    dependencyManagement {
+        dependencies {
+
+        }
+    }
+
+    dependencies {
+
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+}
