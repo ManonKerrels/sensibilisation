@@ -16,6 +16,7 @@ configure(allprojects) { project ->
 configure(subprojects) { project ->
     apply plugin: "io.spring.dependency-management"
     apply plugin: "java"
+    apply plugin: "io.freefair.lombok"
 
     java {
         toolchain {
@@ -23,14 +24,8 @@ configure(subprojects) { project ->
         }
     }
 
-    dependencyManagement {
-        dependencies {
-
-        }
-    }
-
     dependencies {
-
+        implementation('org.springframework.boot:spring-boot-starter-log4j2')
     }
 
     test {
