@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  database:
+    image: 'postgres:latest'
+    container_name: 'mydatabase-container'
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: manon
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: sensibilisation

@@ -37,8 +37,6 @@ A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-F
-secondary-adapters.iml,2\3\23e3abdedc797947f93b26a8c396eaf701f1b877
 _
 /.idea/modules/domain/sensibilisation.domain.iml,e\e\ee21c262f729944e2862acec46c8b5cf0355b6bd
 Å
@@ -115,8 +113,6 @@ x
 H.idea/modules/primary-adapters/sensibilisation.primary-adapters.test.iml,5\2\52075c63dbfeffd2ce3e6f413e6e01d34dba683b
 x
 H.idea/modules/primary-adapters/sensibilisation.primary-adapters.main.iml,3\1\31ce9b6c72447805971bf66174b6001a56c55279
-D
-primary-adapters.iml,2\f\2f6707446c2e454db1658a0560289055ede927ea
 w
 G.idea/sonarlint/issuestore/a/3/a3021bb5ba623a461b5fdb89ae51923a4945c354,e\e\ee94c0f581af13a0adc8d61ba45bdde17e3bbc15
 w
@@ -173,3 +169,7 @@ aprimary-adapters/api/src/main/java/org/sensibilisation/dtos/request/CreateActiv
 Zprimary-adapters/api/src/main/java/org/sensibilisation/usecases/activity/PlanActivity.java,e\5\e5af165beaae4d1d4910fdfbdf4120a5af45e6e0
 Ç
 Rprimary-adapters/api/src/main/java/org/sensibilisation/mappers/ActivityMapper.java,2\c\2cc15373c1f6232fe689469c8244094f41643965
+=
+lombok.config,8\2\823fe80d2650ec87c2614800da17ca3a55af96a9
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

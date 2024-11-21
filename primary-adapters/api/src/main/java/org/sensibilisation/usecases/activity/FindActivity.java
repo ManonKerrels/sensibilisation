@@ -15,6 +15,7 @@ public class FindActivity {
     private final ActivityRepository activityRepository;
 
     public Activity findActivityByUuid(@NonNull UUID activityUuid) {
-        return activityRepository.findByUuid(activityUuid).orElse(null);
+        return null;
+//        return activityRepository.findByUuid(activityUuid).orElse(null);
     }
 }

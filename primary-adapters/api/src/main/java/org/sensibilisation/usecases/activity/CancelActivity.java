@@ -14,6 +14,6 @@ public class CancelActivity {
     private final ActivityRepository activityRepository;
 
     public void removeActivity(@NonNull UUID activityUuid) {
-        activityRepository.deleteActivity(activityUuid);
+//        activityRepository.deleteActivity(activityUuid);
     }
 }

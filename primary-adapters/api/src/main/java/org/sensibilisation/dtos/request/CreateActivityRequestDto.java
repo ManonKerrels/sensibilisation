@@ -4,7 +4,6 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Value;
 import lombok.experimental.SuperBuilder;
-import lombok.extern.jackson.Jacksonized;
 import org.sensibilisation.models.Address;
 import org.sensibilisation.models.enums.ActivityType;
 import org.sensibilisation.models.enums.PriceRange;
@@ -13,7 +12,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Value
-@Jacksonized
 @SuperBuilder(toBuilder = true)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class CreateActivityRequestDto {

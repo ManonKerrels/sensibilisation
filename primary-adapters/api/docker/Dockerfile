@@ -1,0 +1,5 @@
+FROM postgres:latest
+ENV POSTGRES_USER=manon
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=sensibilisation
+EXPOSE 5433

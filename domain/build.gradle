@@ -3,7 +3,7 @@ description = 'sensibilisation - domain'
 apply plugin: "io.freefair.lombok"
 
 dependencies {
-    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+//    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
     implementation "org.springframework.data:spring-data-jpa:3.3.2"
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'

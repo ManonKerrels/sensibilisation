@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    redis:
+      host: localhost
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+  application:
+    name: sensibilisation-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sensibilisation
+    username: manon
+    password: mypassword
+    driver-class-name: org.postgresql.Driver
+    type: org.springframework.jdbc.datasource.SimpleDriverDataSource
+#    driver-class-name : org.postgresql.Driver
+
+services:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
+
+application:
+#  TODO refacto la sécurité
+#  jwt:
+#    secret: "I used to be an adventurer like you, then I took an arrow to the knee"
+#    expires: 86400000
+#    prefix: "Bearer "
+#    header: "Authorization"
