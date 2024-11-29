@@ -8,6 +8,11 @@ spring:
   flyway:
     baselineOnMigrate: true
     enabled: true
+  jpa:
+    show-sql: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: validate
   application:
     name: sensibilisation-api
   datasource:
@@ -18,14 +23,6 @@ spring:
     type: org.springframework.jdbc.datasource.SimpleDriverDataSource
 #    driver-class-name : org.postgresql.Driver
 
-services:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-  h2:
-    console:
-      enabled: true
 
 application:
 #  TODO refacto la sécurité

@@ -1,0 +1,34 @@
+-- create table activity (
+--     id                  bigint,
+--     price               numeric(19, 2),
+--     nom                 varchar(255),
+--     type_activity       varchar(255),
+--     price_range         varchar(255)
+-- );
+--
+-- create table address_activity (
+--     fk_activity_id      bigint not null,
+--     rue                 varchar(255),
+--     numero              varchar(255),
+--     boite               varchar(10),
+--     code_postal         varchar(255),
+--     commune             varchar(255),
+--     pays                varchar(255),
+--     constraint adresse_activity_fk_activity_id foreign key (fk_activity_id) references activity(id)
+-- );
+--
+-- create table traveler (
+--     id                  bigint,
+--     first_name          varchar(255),
+--     last_name           varchar(255),
+--     birth_date          date
+-- );
+--
+-- create table trip (
+--     id                  bigint,
+--     start_date          date,
+--     end_date            date,
+--     nom                 varchar(255),
+--     trip_type           varchar(255),
+--     price_rande         varchar(255)
+-- );
